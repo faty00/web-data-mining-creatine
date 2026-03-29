@@ -1,173 +1,150 @@
-# Projet Web Data Mining — Knowledge Graph sur la créatine
+# Knowledge Graph — Créatine & Suppléments alimentaires
 
-================================================================
-README — Instructions de reproduction des Labs
-Cours : Web Datamining & Semantics
-Domaine : Supplémentation en créatine
-================================================================
+Projet universitaire — A4 DIA4 — Marya LATIF, Faty LO — 2025/2026
 
-## Vue d’ensemble
-Ce projet consiste à extraire des connaissances à partir de données web sur la créatine, construire une base de connaissances (Knowledge Graph), l’aligner avec Wikidata, l’enrichir via des requêtes SPARQL, puis l’exploiter dans un système de question-réponse basé sur un Knowledge Graph
+Construction d'un Knowledge Graph sur la créatine à partir d'articles web français,
+avec alignement Wikidata, raisonnement SWRL, embeddings KGE et pipeline RAG.
 
-Le projet est structuré en plusieurs labs :
+---
 
-- Lab 1 : Collecte de données et extraction d’entités
-- Lab 4 : Construction, alignement et expansion du Knowledge Graph
-- Lab 5 : Raisonnement (SWRL) et embeddings (KGE)
-- Lab 6 : Système RAG avec RDF/SPARQL et LLM local
+## Structure du projet
 
-----------------------------------------------------------------
-LAB 1 — From the Unstructured Web to Structured Entities
-----------------------------------------------------------------
+```
+project-root/
+├── notebooks/
+│   ├── lab1.ipynb           # Crawling + NER
+│   ├── lab4.ipynb           # KB Construction + Alignment + Expansion
+│   ├── Lab5.ipynb           # SWRL + KGE
+│   └── lab6_rag.ipynb       # RAG pipeline
+├── kg_artifacts/
+│   ├── graph_knowledge.nt   # KB privée initiale
+│   ├── expanded_kb.nt       # KB expansée finale (~67k triplets)
+│   ├── alignment.ttl        # Alignement entités + ontologie
+│   └── predicate_alignment.ttl
+├── kge/
+│   ├── train.txt            # 80% — 52 681 triplets
+│   ├── valid.txt            # 10% — 4 786 triplets
+│   └── test.txt             # 10% — 4 777 triplets
+├── data/
+│   ├── crawler_output.jsonl
+│   ├── extracted_knowledge.csv
+│   └── mapping_table.csv
+├── reports/
+│   └── final_report.pdf
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-Environnement : Google Colab (Python 3.12)
+---
 
-Dépendances à installer :
-    pip install trafilatura spacy pandas httpx
-    python -m spacy download fr_core_news_sm
+## Installation
 
-Fichiers générés :
-    - crawler_output.jsonl   : textes extraits des 4 URLs
-    - extracted_knowledge.csv : entités NER filtrées (PER, ORG, LOC)
+```bash
+pip install -r requirements.txt
+python -m spacy download fr_core_news_sm
+```
 
-Instructions :
-1. Ouvrir lab1.ipynb sur Google Colab
-2. Monter le Drive si nécessaire (cellule commentée en haut)
-3. Exécuter toutes les cellules dans l'ordre (Run All)
-4. Les fichiers crawler_output.jsonl et extracted_knowledge.csv
-   sont générés dans le répertoire courant
+### Java (requis pour le raisonnement SWRL — Lab 5)
 
-Notes :
-- Le modèle utilisé est fr_core_news_sm (français) car les articles
-  sources sont en français. Le TP recommande en_core_web_trf mais
-  ce modèle ne convient pas à un corpus francophone.
-- Un URL est bloqué par robots.txt (protegez-vous.ca), ce qui est
-  le comportement attendu du crawler éthique.
-- La méthode nsubj/dobj retourne peu de résultats en français,
-  ce qui est expliqué dans le commentaire de la dernière cellule.
+Télécharger Java 25 : https://www.oracle.com/java/technologies/downloads/#java25-windows
 
+Sur Windows, après installation :
+```
+setx JAVA_HOME "C:\Program Files\Java\jdk-25.0.2" /M
+```
 
-----------------------------------------------------------------
-LAB 4 — KB Construction, Alignment, and Expansion
-----------------------------------------------------------------
+### Ollama (requis pour le RAG — Lab 6)
 
-Environnement : Google Colab (Python 3.12) avec GPU recommandé
-
-Dépendances à installer :
-    pip install trafilatura spacy pandas httpx rdflib sparqlwrapper
-
-Fichiers requis :
-    - Aucun fichier externe requis (tout est généré depuis les URLs)
-
-Fichiers générés :
-    - graph_knowledge.nt     : KB privée initiale (116 triplets)
-    - alignment.ttl          : alignement entités + ontologie
-    - mapping_table.csv      : table de mapping Wikidata
-    - predicate_alignment.ttl: alignement prédicats
-    - expanded_kb.nt         : KB finale expansée (~67 000 triplets)
-
-Instructions :
-1. Ouvrir lab4.ipynb sur Google Colab
-2. Monter le Drive (cellule 1 — décommenter si nécessaire)
-3. Exécuter toutes les cellules dans l'ordre (Run All)
-4. Le Step 4 (expansion SPARQL) peut prendre 10-20 minutes
-   car il fait de nombreuses requêtes sur l'endpoint Wikidata
-
-Notes :
-- Les requêtes Wikidata peuvent échouer avec HTTP 429 (rate limit).
-  En cas d'erreur, attendre quelques secondes et relancer la cellule.
-- Le Step 4 génère environ 67 000 triplets après nettoyage et
-  filtrage des 200 relations les plus fréquentes.
-- Les statistiques finales attendues :
-    Triplets  : ~67 000  (objectif : 50k-200k)
-    Entités   : ~25 000  (objectif : 5k-30k)
-    Relations : 200      (objectif : 50-200)
-
-
-----------------------------------------------------------------
-LAB 5 — Knowledge Reasoning with SWRL and KGE
-----------------------------------------------------------------
-
-Environnement : Google Colab avec GPU
-
-Dépendances à installer :
-    pip install owlready2 rdflib pykeen
-
-Fichiers requis :
-    - family.owl      : ontologie familiale (à placer dans le Drive)
-    - expanded_kb.nt  : généré au lab 4 (à placer dans le Drive)
-
-Instructions :
-1. Activer le GPU : Exécution > Modifier le type d'exécution > GPU
-2. Ouvrir Lab5.ipynb sur Google Colab
-3. Monter le Drive (cellule commentée en haut)
-4. Vérifier que family.owl et expanded_kb.nt sont dans le bon dossier
-5. Exécuter toutes les cellules dans l'ordre
-
-Notes importantes :
-
-PART 1 (SWRL) :
-- Java 25 est téléchargé automatiquement depuis oracle.com
-  (cellule 11 — wget ~180MB, prend 1-2 minutes)
-- Pellet est le reasoner utilisé (pas HermiT) car seul Pellet
-  supporte les règles SWRL dans owlready2
-- onto.individuals() retourne vide à cause du import Protege —
-  utiliser onto.search(type=onto.Person) à la place (cellule 13)
-- Résultat attendu : Peter (70) et Marie (69) classifiés oldPerson
-
-PART 2 (KGE) :
-- L'entraînement de TransE et DistMult prend 5-15 minutes avec GPU
-- Sans GPU, peut prendre 1-2 heures — fortement déconseillé
-- Les métriques attendues (realistic, both) :
-    TransE  : MRR ~0.075, Hits@10 ~0.18
-    DistMult: MRR ~0.266, Hits@10 ~0.42
-- Le t-SNE est calculé sur 2000 entités (sous-échantillon)
-  pour des raisons de performance
-- Section 8 (SWRL vs embedding) : les relations p106 et p166
-  sont introuvables dans le modèle entraîné car absentes du
-  graphe expansé — ce résultat est documenté et expliqué
-
-
-----------------------------------------------------------------
-LAB 6 — RAG with RDF/SPARQL and a Local LLM
-----------------------------------------------------------------
-
-Environnement : LOCAL uniquement (Windows, Jupyter)
-Ce lab NE PEUT PAS tourner sur Google Colab car il requiert
-un serveur Ollama local sur http://localhost:11434
-
-Prérequis :
-1. Installer Ollama : https://ollama.com/download/windows
-2. Ollama démarre automatiquement en service après installation
+1. Télécharger Ollama : https://ollama.com/download/windows
+2. Après installation, Ollama démarre automatiquement en arrière-plan
 3. Télécharger le modèle :
-       ollama pull llama3.2:1b
-4. Installer les dépendances Python :
-       pip install rdflib requests
+```
+ollama pull llama3.2:1b
+```
+4. Vérifier que le service tourne : ouvrir http://localhost:11434 dans un navigateur
 
-Fichiers requis :
-    - expanded_kb.nt : généré au lab 4
-      (à placer dans le même dossier que le notebook)
+---
 
-Instructions :
-1. Vérifier qu'Ollama tourne : ouvrir http://localhost:11434
-   dans un navigateur (doit afficher "Ollama is running")
-2. Ouvrir lab6_rag.ipynb dans Jupyter (pas Colab)
-3. Exécuter toutes les cellules dans l'ordre
-4. La cellule de comparaison 5 questions (cellule 15)
-   prend environ 15-30 minutes sur CPU
+## Comment exécuter chaque module
 
-Notes :
-- Le modèle gemma:2b (recommandé dans le TP) refuse les tâches
-  de génération SPARQL. llama3.2:1b est utilisé à la place —
-  il est explicitement listé dans les alternatives du TP.
-- Le RAG retourne 0 résultats sur toutes les questions car
-  llama3.2:1b hallucine des préfixes inexistants (brick:, skos:).
-  Ce comportement est documenté et analysé dans la Discussion.
-- La boucle de self-repair fonctionne (Réparé ? True sur 4/5
-  questions) mais ne peut pas corriger les IRIs inventés.
-- La demo CLI (run_cli_demo) est commentée dans le notebook —
-  pour la lancer en interactif : python lab6_rag.py
-- Un modèle plus grand (7B+) améliorerait significativement
-  la qualité de génération SPARQL.
+### Lab 1 — Crawling + NER
+Environnement : Google Colab
+```
+notebooks/lab1.ipynb
+```
+Génère : `crawler_output.jsonl`, `extracted_knowledge.csv`
 
-================================================================
+### Lab 4 — KB Construction, Alignment & Expansion
+Environnement : Google Colab (GPU recommandé)
+```
+notebooks/lab4.ipynb
+```
+Génère : `graph_knowledge.nt`, `alignment.ttl`, `mapping_table.csv`, `expanded_kb.nt`
+
+Note : le Step 4 (expansion SPARQL) peut prendre 10-20 minutes.
+
+### Lab 5 — SWRL + KGE
+Environnement : Google Colab avec GPU (T4)
+```
+notebooks/Lab5.ipynb
+```
+Fichiers requis : `family.owl`, `expanded_kb.nt`
+Génère : `train.txt`, `valid.txt`, `test.txt`, `tsne_embeddings.png`
+
+Note : Java 25 est téléchargé automatiquement dans la cellule 11.
+
+### Lab 6 — RAG Pipeline
+Environnement : **Local uniquement** (Ollama ne fonctionne pas sur Colab)
+```
+jupyter notebook notebooks/lab6_rag.ipynb
+```
+Fichiers requis : `expanded_kb.nt` dans le même dossier que le notebook
+
+Pour lancer la démo CLI interactive :
+```
+python lab6_rag.py
+```
+
+---
+
+## Lancer la démo RAG
+
+1. Vérifier qu'Ollama tourne (http://localhost:11434)
+2. Placer `expanded_kb.nt` dans le dossier `notebooks/`
+3. Ouvrir `lab6_rag.ipynb` dans Jupyter
+4. Exécuter toutes les cellules dans l'ordre
+
+---
+
+## Hardware requis
+
+| Module | Environnement | GPU requis |
+|---|---|---|
+| Lab 1 (Crawling + NER) | Google Colab | Non |
+| Lab 4 (KB + Expansion) | Google Colab | Non |
+| Lab 5 (KGE) | Google Colab | Oui (T4 recommandé) |
+| Lab 6 (RAG) | Local | Non |
+
+---
+
+## Statistiques du Knowledge Graph final
+
+| Dimension | Valeur | Objectif |
+|---|---|---|
+| Triplets | 67 234 | 50k – 200k |
+| Entités | ~25 000 | 5k – 30k |
+| Relations | 200 | 50 – 200 |
+
+---
+
+## Screenshot
+
+![RAG Pipeline](reports/screenshot_rag.png)
+
+---
+
+## Fichiers volumineux
+
+`expanded_kb.nt` (~67k triplets) est inclus dans `kg_artifacts/`.
+Si le fichier dépasse la limite GitHub (100MB), le télécharger depuis la release v1.0-final.

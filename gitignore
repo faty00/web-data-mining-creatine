@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (trop lourds pour GitHub)
+data/expanded_kb.nt
+data/crawler_output.jsonl
+kge/train.txt
+kge/valid.txt
+kge/test.txt
+
+# Java (lab 5)
+jdk-25*/
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,27 @@
+# Web Crawling & Cleaning
+trafilatura==2.0.0
+httpx
+lxml_html_clean
+
+# NLP
+spacy==3.8.11
+# Download model with: python -m spacy download fr_core_news_sm
+
+# Data
+pandas
+requests
+
+# RDF & Knowledge Graph
+rdflib==7.6.0
+SPARQLWrapper==2.0.0
+owlready2==0.50
+
+# KGE
+pykeen==1.11.1
+torch
+scikit-learn
+matplotlib
+numpy
+
+# RAG
+# Ollama must be installed separately: https://ollama.com/download

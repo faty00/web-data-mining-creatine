@@ -1,0 +1,202 @@
+<http://example.org/resource/ATP> <http://example.org/property/isA> <http://example.org/resource/energy_molecule> .
+<http://example.org/resource/ATP> <http://example.org/property/usedBy> <http://example.org/resource/brain> .
+<http://example.org/resource/ATP> <http://example.org/property/usedBy> <http://example.org/resource/muscle> .
+<http://example.org/resource/Abbie_E._Smith-Ryan> <http://example.org/property/affiliatedWith> <http://example.org/resource/Chapel_Hill> .
+<http://example.org/resource/Abbie_E._Smith-Ryan> <http://example.org/property/publishedIn> <http://example.org/resource/Nutrients> .
+<http://example.org/resource/Abbie_E._Smith-Ryan> <http://example.org/property/researchedOn> <http://example.org/resource/creatine> .
+<http://example.org/resource/Ahmun> <http://example.org/property/acute> <http://example.org/resource/R._P.> .
+<http://example.org/resource/Alzheimer> <http://example.org/property/isA> <http://example.org/resource/neurodegenerative_disease> .
+<http://example.org/resource/Balsom_PD> <http://example.org/property/reference> <http://example.org/resource/Soderland_K> .
+<http://example.org/resource/Beltman> <http://example.org/property/-> <http://example.org/resource/J._G.> .
+<http://example.org/resource/Bemben> <http://example.org/property/curve> <http://example.org/resource/M._G.> .
+<http://example.org/resource/Bemben> <http://example.org/property/isometric> <http://example.org/resource/M._G.> .
+<http://example.org/resource/Chapel_Hill> <http://example.org/property/locatedIn> <http://example.org/resource/Canada> .
+<http://example.org/resource/Cognition> <http://example.org/property/attirer> <http://example.org/resource/Cr%C3%A9atine> .
+<http://example.org/resource/D._G.> <http://example.org/property/combined> <http://example.org/resource/A._B.> .
+<http://example.org/resource/D._G.> <http://example.org/property/strength> <http://example.org/resource/A._B.> .
+<http://example.org/resource/Ferreira_M> <http://example.org/property/kreider> <http://example.org/resource/Wilson_M> .
+<http://example.org/resource/Forbes> <http://example.org/property/dire> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Forbes> <http://example.org/property/pouvoir> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Generally_Recognized> <http://example.org/property/r%C3%A9aliser> <http://example.org/resource/Safe> .
+<http://example.org/resource/Generally_Recognized> <http://example.org/property/rapporter> <http://example.org/resource/Safe> .
+<http://example.org/resource/Hanefeld> <http://example.org/property/error> <http://example.org/resource/J._Creatine> .
+<http://example.org/resource/Hanefeld> <http://example.org/property/replacemer> <http://example.org/resource/J._Creatine> .
+<http://example.org/resource/Huntington> <http://example.org/property/am%C3%A9liorer> <http://example.org/resource/Charcot> .
+<http://example.org/resource/Huntington> <http://example.org/property/origine> <http://example.org/resource/Charcot> .
+<http://example.org/resource/J._P.> <http://example.org/property/performance> <http://example.org/resource/Ebert> .
+<http://example.org/resource/Kre-Alkalyn> <http://example.org/property/ester> <http://example.org/resource/Cr%C3%A9atine_Ethyl_Ester> .
+<http://example.org/resource/Kre-Alkalyn> <http://example.org/property/recommander> <http://example.org/resource/Cr%C3%A9atine_Ethyl_Ester> .
+<http://example.org/resource/Kre-Alkalyn> <http://example.org/property/tourner> <http://example.org/resource/Cr%C3%A9atine_Ethyl_Ester> .
+<http://example.org/resource/MDPI> <http://example.org/property/publishes> <http://example.org/resource/Nutrients> .
+<http://example.org/resource/Manitoba> <http://example.org/property/locatedIn> <http://example.org/resource/Canada> .
+<http://example.org/resource/McNaughton_LR> <http://example.org/property/elite> <http://example.org/resource/Dalton_B> .
+<http://example.org/resource/McNaughton_LR> <http://example.org/property/performers> <http://example.org/resource/Dalton_B> .
+<http://example.org/resource/Natural_Killer> <http://example.org/property/isA> <http://example.org/resource/immune_cell> .
+<http://example.org/resource/Nutrients> <http://example.org/property/isA> <http://example.org/resource/scientific_journal> .
+<http://example.org/resource/Parkinson> <http://example.org/property/concerner> <http://example.org/resource/Parkinson> .
+<http://example.org/resource/Parkinson> <http://example.org/property/montrer> <http://example.org/resource/Parkinson> .
+<http://example.org/resource/Parkinson> <http://example.org/property/ralentir> <http://example.org/resource/Parkinson> .
+<http://example.org/resource/Parkinson> <http://example.org/property/reporter> <http://example.org/resource/Parkinson> .
+<http://example.org/resource/Parkinson> <http://example.org/property/souffrir> <http://example.org/resource/Parkinson> .
+<http://example.org/resource/R%C3%A9sultats> <http://example.org/property/cler> <http://example.org/resource/MDPI> .
+<http://example.org/resource/R._B.> <http://example.org/property/kreider> <http://example.org/resource/Melton> .
+<http://example.org/resource/Rocic> <http://example.org/property/a.> <http://example.org/resource/Znaor> .
+<http://example.org/resource/Rocic> <http://example.org/property/effects> <http://example.org/resource/Bajuk> .
+<http://example.org/resource/Rocic> <http://example.org/property/effects> <http://example.org/resource/Znaor> .
+<http://example.org/resource/Rocic> <http://example.org/property/glibenclamide> <http://example.org/resource/Znaor> .
+<http://example.org/resource/Rocic> <http://example.org/property/metformin> <http://example.org/resource/Bajuk> .
+<http://example.org/resource/Rourke> <http://example.org/property/disorder> <http://example.org/resource/D._J.> .
+<http://example.org/resource/S._J.> <http://example.org/property/controlled> <http://example.org/resource/Vincent> .
+<http://example.org/resource/Scientific_Reports> <http://example.org/property/isA> <http://example.org/resource/scientific_journal> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/affiliatedWith> <http://example.org/resource/Universit%C3%A9_de_Brandon> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/aide> <http://example.org/resource/Universit%C3%A9_de_Brandon> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/associer> <http://example.org/resource/Universit%C3%A9_de_Brandon> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/d%C3%A9partemer> <http://example.org/resource/Universit%C3%A9_de_Brandon> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/donne> <http://example.org/resource/Universit%C3%A9_de_Brandon> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/expliquer> <http://example.org/resource/Universit%C3%A9_de_Brandon> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/locatedIn> <http://example.org/resource/Manitoba> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/maintenir> <http://example.org/resource/Universit%C3%A9_de_Brandon> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/publishedIn> <http://example.org/resource/Scientific_Reports> .
+<http://example.org/resource/Scott_Forbes> <http://example.org/property/researchedOn> <http://example.org/resource/creatine> .
+<http://example.org/resource/Smith> <http://example.org/property/creatine> <http://example.org/resource/C._A.> .
+<http://example.org/resource/Smith> <http://example.org/property/heavy> <http://example.org/resource/C._A.> .
+<http://example.org/resource/Smith> <http://example.org/property/myosin> <http://example.org/resource/C._A.> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/agir> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/aider> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/ajouter> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/augmenter> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/conna%C3%AEtre> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/dormir> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/obtenir> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/permettre> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/pouvoir> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/pr%C3%A9senter> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/pr%C3%A9venir> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/prendre> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/ressentir> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/souffrir> <http://example.org/resource/Smith-Ryan> .
+<http://example.org/resource/Smith-Ryan> <http://example.org/property/soutenir> <http://example.org/resource/CR%C3%89ATINE> .
+<http://example.org/resource/Soderlund> <http://example.org/property/a.> <http://example.org/resource/Skold> .
+<http://example.org/resource/Soderlund> <http://example.org/property/controlled> <http://example.org/resource/Skold> .
+<http://example.org/resource/Soderlund> <http://example.org/property/physical> <http://example.org/resource/Skold> .
+<http://example.org/resource/T._J.> <http://example.org/property/strength> <http://example.org/resource/Lougheed> .
+<http://example.org/resource/Tarnopolsky_MA> <http://example.org/property/controlled> <http://example.org/resource/Vorgerd_M._Creatine> .
+<http://example.org/resource/Tarnopolsky_MA> <http://example.org/property/meta-analysis> <http://example.org/resource/Vorgerd_M._Creatine> .
+<http://example.org/resource/Tarnopolsky_MA> <http://example.org/property/publier> <http://example.org/resource/Vorgerd_M._Creatine> .
+<http://example.org/resource/Terjung_RL> <http://example.org/property/eichner> <http://example.org/resource/Clarkson_P> .
+<http://example.org/resource/Universit%C3%A9_de_Brandon> <http://example.org/property/locatedIn> <http://example.org/resource/Manitoba> .
+<http://example.org/resource/V._E._and_Gross> <http://example.org/property/distress> <http://example.org/resource/D._No> .
+<http://example.org/resource/V._E._and_Gross> <http://example.org/property/respiratory> <http://example.org/resource/D._No> .
+<http://example.org/resource/anxiety> <http://example.org/property/isA> <http://example.org/resource/mental_disorder> .
+<http://example.org/resource/creatine> <http://example.org/property/convertedTo> <http://example.org/resource/creatinine> .
+<http://example.org/resource/creatine> <http://example.org/property/hasEffect> <http://example.org/resource/Natural_Killer> .
+<http://example.org/resource/creatine> <http://example.org/property/hasEffect> <http://example.org/resource/anxiety> .
+<http://example.org/resource/creatine> <http://example.org/property/hasEffect> <http://example.org/resource/brain> .
+<http://example.org/resource/creatine> <http://example.org/property/hasEffect> <http://example.org/resource/depression> .
+<http://example.org/resource/creatine> <http://example.org/property/hasEffect> <http://example.org/resource/muscle> .
+<http://example.org/resource/creatine> <http://example.org/property/hasEffect> <http://example.org/resource/sleep> .
+<http://example.org/resource/creatine> <http://example.org/property/hasStatus> <http://example.org/resource/Generally_Recognized_as_Safe> .
+<http://example.org/resource/creatine> <http://example.org/property/improves> <http://example.org/resource/cognitive_function> .
+<http://example.org/resource/creatine> <http://example.org/property/improves> <http://example.org/resource/muscle_strength> .
+<http://example.org/resource/creatine> <http://example.org/property/improves> <http://example.org/resource/sleep_quality> .
+<http://example.org/resource/creatine> <http://example.org/property/investigatedFor> <http://example.org/resource/Alzheimer> .
+<http://example.org/resource/creatine> <http://example.org/property/isA> <http://example.org/resource/chemical_compound> .
+<http://example.org/resource/creatine> <http://example.org/property/isA> <http://example.org/resource/dietary_supplement> .
+<http://example.org/resource/creatine> <http://example.org/property/metabolizedTo> <http://example.org/resource/phosphocreatine> .
+<http://example.org/resource/creatine> <http://example.org/property/reduces> <http://example.org/resource/anxiety> .
+<http://example.org/resource/creatine> <http://example.org/property/reduces> <http://example.org/resource/depression> .
+<http://example.org/resource/creatine> <http://example.org/property/safeFor> <http://example.org/resource/kidney> .
+<http://example.org/resource/creatine> <http://example.org/property/storedIn> <http://example.org/resource/brain> .
+<http://example.org/resource/creatine> <http://example.org/property/storedIn> <http://example.org/resource/muscle> .
+<http://example.org/resource/creatine> <http://example.org/property/studiedBy> <http://example.org/resource/International_Society_of_Sports_Nutrition> .
+<http://example.org/resource/creatine> <http://example.org/property/synthesizedFrom> <http://example.org/resource/amino_acid> .
+<http://example.org/resource/depression> <http://example.org/property/isA> <http://example.org/resource/mental_disorder> .
+<http://example.org/resource/kidney> <http://example.org/property/metabolizes> <http://example.org/resource/creatinine> .
+<http://example.org/resource/phosphocreatine> <http://example.org/property/regenerates> <http://example.org/resource/ATP> .
+<http://example.org/resource/phosphocreatine> <http://example.org/property/storedIn> <http://example.org/resource/muscle> .
+<http://example.org/resource/A._B.> <http://www.w3.org/2000/01/rdf-schema#label> "A. B."@fr .
+<http://example.org/resource/ATP> <http://www.w3.org/2000/01/rdf-schema#label> "ATP"@fr .
+<http://example.org/resource/Abbie_E._Smith-Ryan> <http://www.w3.org/2000/01/rdf-schema#label> "Abbie E. Smith-Ryan"@fr .
+<http://example.org/resource/Ahmun> <http://www.w3.org/2000/01/rdf-schema#label> "Ahmun"@fr .
+<http://example.org/resource/Alzheimer> <http://www.w3.org/2000/01/rdf-schema#label> "Alzheimer"@fr .
+<http://example.org/resource/Bajuk> <http://www.w3.org/2000/01/rdf-schema#label> "Bajuk"@fr .
+<http://example.org/resource/Balsom_PD> <http://www.w3.org/2000/01/rdf-schema#label> "Balsom PD"@fr .
+<http://example.org/resource/Beltman> <http://www.w3.org/2000/01/rdf-schema#label> "Beltman"@fr .
+<http://example.org/resource/Bemben> <http://www.w3.org/2000/01/rdf-schema#label> "Bemben"@fr .
+<http://example.org/resource/C._A.> <http://www.w3.org/2000/01/rdf-schema#label> "C. A."@fr .
+<http://example.org/resource/CR%C3%89ATINE> <http://www.w3.org/2000/01/rdf-schema#label> "CRÉATINE"@fr .
+<http://example.org/resource/Canada> <http://www.w3.org/2000/01/rdf-schema#label> "Canada"@fr .
+<http://example.org/resource/Chapel_Hill> <http://www.w3.org/2000/01/rdf-schema#label> "Chapel Hill"@fr .
+<http://example.org/resource/Charcot> <http://www.w3.org/2000/01/rdf-schema#label> "Charcot"@fr .
+<http://example.org/resource/Clarkson_P> <http://www.w3.org/2000/01/rdf-schema#label> "Clarkson P"@fr .
+<http://example.org/resource/Cognition> <http://www.w3.org/2000/01/rdf-schema#label> "Cognition"@fr .
+<http://example.org/resource/Cr%C3%A9atine> <http://www.w3.org/2000/01/rdf-schema#label> "Créatine"@fr .
+<http://example.org/resource/Cr%C3%A9atine_Ethyl_Ester> <http://www.w3.org/2000/01/rdf-schema#label> "Créatine Ethyl Ester"@fr .
+<http://example.org/resource/D._G.> <http://www.w3.org/2000/01/rdf-schema#label> "D. G."@fr .
+<http://example.org/resource/D._J.> <http://www.w3.org/2000/01/rdf-schema#label> "D. J."@fr .
+<http://example.org/resource/D._No> <http://www.w3.org/2000/01/rdf-schema#label> "D. No"@fr .
+<http://example.org/resource/Dalton_B> <http://www.w3.org/2000/01/rdf-schema#label> "Dalton B"@fr .
+<http://example.org/resource/Ebert> <http://www.w3.org/2000/01/rdf-schema#label> "Ebert"@fr .
+<http://example.org/resource/Ferreira_M> <http://www.w3.org/2000/01/rdf-schema#label> "Ferreira M"@fr .
+<http://example.org/resource/Forbes> <http://www.w3.org/2000/01/rdf-schema#label> "Forbes"@fr .
+<http://example.org/resource/Generally_Recognized> <http://www.w3.org/2000/01/rdf-schema#label> "Generally Recognized"@fr .
+<http://example.org/resource/Generally_Recognized_as_Safe> <http://www.w3.org/2000/01/rdf-schema#label> "Generally Recognized as Safe"@fr .
+<http://example.org/resource/Hanefeld> <http://www.w3.org/2000/01/rdf-schema#label> "Hanefeld"@fr .
+<http://example.org/resource/Huntington> <http://www.w3.org/2000/01/rdf-schema#label> "Huntington"@fr .
+<http://example.org/resource/International_Society_of_Sports_Nutrition> <http://www.w3.org/2000/01/rdf-schema#label> "International Society of Sports Nutrition"@fr .
+<http://example.org/resource/J._Creatine> <http://www.w3.org/2000/01/rdf-schema#label> "J. Creatine"@fr .
+<http://example.org/resource/J._G.> <http://www.w3.org/2000/01/rdf-schema#label> "J. G."@fr .
+<http://example.org/resource/J._P.> <http://www.w3.org/2000/01/rdf-schema#label> "J. P."@fr .
+<http://example.org/resource/Kre-Alkalyn> <http://www.w3.org/2000/01/rdf-schema#label> "Kre-Alkalyn"@fr .
+<http://example.org/resource/Lougheed> <http://www.w3.org/2000/01/rdf-schema#label> "Lougheed"@fr .
+<http://example.org/resource/M._G.> <http://www.w3.org/2000/01/rdf-schema#label> "M. G."@fr .
+<http://example.org/resource/MDPI> <http://www.w3.org/2000/01/rdf-schema#label> "MDPI"@fr .
+<http://example.org/resource/Manitoba> <http://www.w3.org/2000/01/rdf-schema#label> "Manitoba"@fr .
+<http://example.org/resource/McNaughton_LR> <http://www.w3.org/2000/01/rdf-schema#label> "McNaughton LR"@fr .
+<http://example.org/resource/Melton> <http://www.w3.org/2000/01/rdf-schema#label> "Melton"@fr .
+<http://example.org/resource/Natural_Killer> <http://www.w3.org/2000/01/rdf-schema#label> "Natural Killer"@fr .
+<http://example.org/resource/Nutrients> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrients"@fr .
+<http://example.org/resource/Parkinson> <http://www.w3.org/2000/01/rdf-schema#label> "Parkinson"@fr .
+<http://example.org/resource/R%C3%A9sultats> <http://www.w3.org/2000/01/rdf-schema#label> "Résultats"@fr .
+<http://example.org/resource/R._B.> <http://www.w3.org/2000/01/rdf-schema#label> "R. B."@fr .
+<http://example.org/resource/R._P.> <http://www.w3.org/2000/01/rdf-schema#label> "R. P."@fr .
+<http://example.org/resource/Rocic> <http://www.w3.org/2000/01/rdf-schema#label> "Rocic"@fr .
+<http://example.org/resource/Rourke> <http://www.w3.org/2000/01/rdf-schema#label> "Rourke"@fr .
+<http://example.org/resource/S._J.> <http://www.w3.org/2000/01/rdf-schema#label> "S. J."@fr .
+<http://example.org/resource/Safe> <http://www.w3.org/2000/01/rdf-schema#label> "Safe"@fr .
+<http://example.org/resource/Scientific_Reports> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Reports"@fr .
+<http://example.org/resource/Scott_Forbes> <http://www.w3.org/2000/01/rdf-schema#label> "Scott Forbes"@fr .
+<http://example.org/resource/Skold> <http://www.w3.org/2000/01/rdf-schema#label> "Skold"@fr .
+<http://example.org/resource/Smith> <http://www.w3.org/2000/01/rdf-schema#label> "Smith"@fr .
+<http://example.org/resource/Smith-Ryan> <http://www.w3.org/2000/01/rdf-schema#label> "Smith-Ryan"@fr .
+<http://example.org/resource/Soderland_K> <http://www.w3.org/2000/01/rdf-schema#label> "Soderland K"@fr .
+<http://example.org/resource/Soderlund> <http://www.w3.org/2000/01/rdf-schema#label> "Soderlund"@fr .
+<http://example.org/resource/T._J.> <http://www.w3.org/2000/01/rdf-schema#label> "T. J."@fr .
+<http://example.org/resource/Tarnopolsky_MA> <http://www.w3.org/2000/01/rdf-schema#label> "Tarnopolsky MA"@fr .
+<http://example.org/resource/Terjung_RL> <http://www.w3.org/2000/01/rdf-schema#label> "Terjung RL"@fr .
+<http://example.org/resource/Universit%C3%A9_de_Brandon> <http://www.w3.org/2000/01/rdf-schema#label> "Université de Brandon"@fr .
+<http://example.org/resource/V._E._and_Gross> <http://www.w3.org/2000/01/rdf-schema#label> "V. E. and Gross"@fr .
+<http://example.org/resource/Vincent> <http://www.w3.org/2000/01/rdf-schema#label> "Vincent"@fr .
+<http://example.org/resource/Vorgerd_M._Creatine> <http://www.w3.org/2000/01/rdf-schema#label> "Vorgerd M. Creatine"@fr .
+<http://example.org/resource/Wilson_M> <http://www.w3.org/2000/01/rdf-schema#label> "Wilson M"@fr .
+<http://example.org/resource/Znaor> <http://www.w3.org/2000/01/rdf-schema#label> "Znaor"@fr .
+<http://example.org/resource/amino_acid> <http://www.w3.org/2000/01/rdf-schema#label> "amino acid"@fr .
+<http://example.org/resource/anxiety> <http://www.w3.org/2000/01/rdf-schema#label> "anxiety"@fr .
+<http://example.org/resource/brain> <http://www.w3.org/2000/01/rdf-schema#label> "brain"@fr .
+<http://example.org/resource/chemical_compound> <http://www.w3.org/2000/01/rdf-schema#label> "chemical compound"@fr .
+<http://example.org/resource/cognitive_function> <http://www.w3.org/2000/01/rdf-schema#label> "cognitive function"@fr .
+<http://example.org/resource/creatine> <http://www.w3.org/2000/01/rdf-schema#label> "creatine"@fr .
+<http://example.org/resource/creatinine> <http://www.w3.org/2000/01/rdf-schema#label> "creatinine"@fr .
+<http://example.org/resource/depression> <http://www.w3.org/2000/01/rdf-schema#label> "depression"@fr .
+<http://example.org/resource/dietary_supplement> <http://www.w3.org/2000/01/rdf-schema#label> "dietary supplement"@fr .
+<http://example.org/resource/energy_molecule> <http://www.w3.org/2000/01/rdf-schema#label> "energy molecule"@fr .
+<http://example.org/resource/immune_cell> <http://www.w3.org/2000/01/rdf-schema#label> "immune cell"@fr .
+<http://example.org/resource/kidney> <http://www.w3.org/2000/01/rdf-schema#label> "kidney"@fr .
+<http://example.org/resource/mental_disorder> <http://www.w3.org/2000/01/rdf-schema#label> "mental disorder"@fr .
+<http://example.org/resource/muscle> <http://www.w3.org/2000/01/rdf-schema#label> "muscle"@fr .
+<http://example.org/resource/muscle_strength> <http://www.w3.org/2000/01/rdf-schema#label> "muscle strength"@fr .
+<http://example.org/resource/neurodegenerative_disease> <http://www.w3.org/2000/01/rdf-schema#label> "neurodegenerative disease"@fr .
+<http://example.org/resource/phosphocreatine> <http://www.w3.org/2000/01/rdf-schema#label> "phosphocreatine"@fr .
+<http://example.org/resource/scientific_journal> <http://www.w3.org/2000/01/rdf-schema#label> "scientific journal"@fr .
+<http://example.org/resource/sleep> <http://www.w3.org/2000/01/rdf-schema#label> "sleep"@fr .
+<http://example.org/resource/sleep_quality> <http://www.w3.org/2000/01/rdf-schema#label> "sleep quality"@fr .
