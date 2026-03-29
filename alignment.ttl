@@ -1,0 +1,194 @@
+@prefix ex: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<http://example.org/A._B.> owl:sameAs wd:Q1765120 .
+
+ex:ATP owl:sameAs wd:Q80863 .
+
+ex:Abbie_E._Smith-Ryan owl:sameAs wd:Q51463218 .
+
+ex:Ahmun owl:sameAs wd:Q118434217 .
+
+ex:Alzheimer owl:sameAs wd:Q11081 .
+
+ex:Bajuk owl:sameAs wd:Q21504782 .
+
+ex:Balsom_PD a ex:CreatineRelatedConcept .
+
+ex:Beltman owl:sameAs wd:Q37085788 .
+
+ex:Bemben owl:sameAs wd:Q36978179 .
+
+<http://example.org/C._A.> owl:sameAs wd:Q655719 .
+
+ex:CRÉATINE owl:sameAs wd:Q223600 .
+
+ex:Canada owl:sameAs wd:Q16 .
+
+ex:Chapel_Hill owl:sameAs wd:Q671812 .
+
+ex:Charcot owl:sameAs wd:Q24514244 .
+
+ex:Clarkson_P owl:sameAs wd:Q1726890 .
+
+ex:Cognition owl:sameAs wd:Q2200417 .
+
+ex:Créatine owl:sameAs wd:Q223600 .
+
+ex:Créatine_Ethyl_Ester owl:sameAs wd:Q3501033 .
+
+<http://example.org/D._G.> owl:sameAs wd:Q17319095 .
+
+<http://example.org/D._J.> owl:sameAs wd:Q22686 .
+
+ex:D._No owl:sameAs wd:Q106093603 .
+
+ex:Dalton_B owl:sameAs wd:Q426391 .
+
+ex:Ebert owl:sameAs wd:Q21491601 .
+
+ex:Ferreira_M owl:sameAs wd:Q47502638 .
+
+ex:Forbes owl:sameAs wd:Q16275858 .
+
+ex:Generally_Recognized owl:sameAs wd:Q1041116 .
+
+ex:Generally_Recognized_as_Safe owl:sameAs wd:Q1041116 .
+
+ex:Hanefeld owl:sameAs wd:Q37504696 .
+
+ex:Huntington owl:sameAs wd:Q241808 .
+
+ex:International_Society_of_Sports_Nutrition owl:sameAs wd:Q16324699 .
+
+ex:J._Creatine a ex:CreatineRelatedConcept .
+
+<http://example.org/J._G.> owl:sameAs wd:Q730330 .
+
+<http://example.org/J._P.> owl:sameAs wd:Q56449936 .
+
+ex:Kre-Alkalyn owl:sameAs wd:Q59292490 .
+
+ex:Lougheed owl:sameAs wd:Q37463936 .
+
+<http://example.org/M._G.> owl:sameAs wd:Q2523019 .
+
+ex:MDPI owl:sameAs wd:Q30289533 .
+
+ex:Manitoba owl:sameAs wd:Q1948 .
+
+ex:McNaughton_LR a ex:CreatineRelatedConcept .
+
+ex:Melton owl:sameAs wd:Q1853349 .
+
+ex:Natural_Killer owl:sameAs wd:Q332181 .
+
+ex:Nutrients owl:sameAs wd:Q7070485 .
+
+ex:Parkinson owl:sameAs wd:Q11085 .
+
+<http://example.org/R._B.> owl:sameAs wd:Q120165342 .
+
+<http://example.org/R._P.> owl:sameAs wd:Q18672141 .
+
+ex:Rocic owl:sameAs wd:Q89698333 .
+
+ex:Rourke owl:sameAs wd:Q21400534 .
+
+ex:Résultats owl:sameAs wd:Q51431348 .
+
+<http://example.org/S._J.> owl:sameAs wd:Q194402 .
+
+ex:Safe owl:sameAs wd:Q37234682 .
+
+ex:Scientific_Reports owl:sameAs wd:Q2261792 .
+
+ex:Scott_Forbes owl:sameAs wd:Q112500633 .
+
+ex:Skold owl:sameAs wd:Q10671206 .
+
+ex:Smith owl:sameAs wd:Q1158446 .
+
+ex:Smith-Ryan a ex:CreatineRelatedConcept .
+
+ex:Soderland_K a ex:CreatineRelatedConcept .
+
+ex:Soderlund owl:sameAs wd:Q21489001 .
+
+<http://example.org/T._J.> owl:sameAs wd:Q30669970 .
+
+ex:Tarnopolsky_MA a ex:CreatineRelatedConcept .
+
+ex:Terjung_RL a ex:CreatineRelatedConcept .
+
+ex:University rdfs:subClassOf ex:Organization .
+
+ex:Université_de_Brandon owl:sameAs wd:Q4957110 .
+
+ex:V._E._and_Gross a ex:CreatineRelatedConcept .
+
+ex:Vincent owl:sameAs wd:Q4928254 .
+
+ex:Vorgerd_M._Creatine a ex:CreatineRelatedConcept .
+
+ex:Wilson_M owl:sameAs wd:Q10393806 .
+
+ex:Znaor a ex:CreatineRelatedConcept .
+
+ex:affiliatedWith rdfs:domain ex:Person ;
+    rdfs:range ex:Organization .
+
+ex:amino_acid owl:sameAs wd:Q8066 .
+
+ex:anxiety owl:sameAs wd:Q154430 .
+
+ex:brain owl:sameAs wd:Q897386 .
+
+ex:chemical_compound owl:sameAs wd:Q11173 .
+
+ex:cognitive_function owl:sameAs wd:Q13434561 .
+
+ex:creatine owl:sameAs wd:Q223600 .
+
+ex:creatinine owl:sameAs wd:Q426660 .
+
+ex:depression owl:sameAs wd:Q42844 .
+
+ex:dietary_supplement owl:sameAs wd:Q645858 .
+
+ex:energy_molecule a ex:CreatineRelatedConcept .
+
+ex:hasEffect rdfs:domain ex:CreatineSupplement ;
+    rdfs:range ex:BiologicalProcess .
+
+ex:immune_cell owl:sameAs wd:Q104524156 .
+
+ex:kidney owl:sameAs wd:Q9377 .
+
+ex:mental_disorder owl:sameAs wd:Q12135 .
+
+ex:muscle owl:sameAs wd:Q7365 .
+
+ex:muscle_strength owl:sameAs wd:Q3076906 .
+
+ex:neurodegenerative_disease owl:sameAs wd:Q1755122 .
+
+ex:phosphocreatine owl:sameAs wd:Q1984607 .
+
+ex:scientific_journal owl:sameAs wd:Q5633421 .
+
+ex:sleep owl:sameAs wd:Q35831 .
+
+ex:sleep_quality owl:sameAs wd:Q112115601 .
+
+ex:studiedBy rdfs:domain ex:CreatineSupplement ;
+    rdfs:range ex:Researcher .
+
+ex:DietarySupplement rdfs:subClassOf ex:Substance .
+
+ex:Researcher rdfs:subClassOf ex:Person .
+
+ex:CreatineSupplement rdfs:subClassOf ex:DietarySupplement .
+

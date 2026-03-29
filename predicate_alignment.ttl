@@ -1,0 +1,19 @@
+@prefix ex: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+
+ex:affiliatedWith owl:equivalentProperty wdt:P1416 .
+
+ex:hasEffect owl:equivalentProperty wdt:P1542 .
+
+ex:isA owl:equivalentProperty wdt:P31 .
+
+ex:locatedIn owl:equivalentProperty wdt:P131 .
+
+ex:publishedIn owl:equivalentProperty wdt:P1433 .
+
+ex:storedIn rdfs:subPropertyOf wdt:P276 .
+
+ex:studiedBy owl:equivalentProperty wdt:P1450 .
+
