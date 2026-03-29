@@ -138,12 +138,6 @@ python lab6_rag.py
 
 ---
 
-## Screenshot
-
-![RAG Pipeline](reports/screenshot_rag.png)
-
----
-
 ## Fichiers volumineux
 
 `expanded_kb.nt` (~67k triplets) est inclus dans `kg_artifacts/`.
