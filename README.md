@@ -1,6 +1,6 @@
 # Knowledge Graph — Créatine & Suppléments alimentaires
 
-Projet universitaire — A4 DIA4 — Marya LATIF, Faty LO — 2025/2026
+Projet web datamining  - A4 DIA4 - Marya LATIF, Faty LO - 2025/2026
 
 Construction d'un Knowledge Graph sur la créatine à partir d'articles web français,
 avec alignement Wikidata, raisonnement SWRL, embeddings KGE et pipeline RAG.
